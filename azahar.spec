@@ -7,7 +7,6 @@ License: MIT
 BuildRequires: cmake
 BuildRequires: make
 BuildRequires: gcc-c++
-BuildRequires: cmake(fmt)
 BuildRequires: rpm_macro(cmake)
 BuildRequires: rpm_macro(cmake_build)
 BuildRequires: rpm_macro(cmake_install)
