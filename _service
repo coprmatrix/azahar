@@ -1,0 +1,38 @@
+<services>
+  <service name="obs_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/azahar-emu/azahar</param>
+    <param name="versionformat">@PARENT_TAG@</param>
+    <param name="revision">master</param>
+    <param name="exclude">externals/boost</param>
+<param name="exclude">externals/nihstro</param>
+<param name="exclude">externals/soundtouch</param>
+<param name="exclude">externals/catch2</param>
+<param name="exclude">externals/dynarmic</param>
+<param name="exclude">externals/xbyak</param>
+<param name="exclude">externals/fmt</param>
+<param name="exclude">externals/enet</param>
+<param name="exclude">externals/inih/inih</param>
+<param name="exclude">externals/libressl</param>
+<param name="exclude">externals/libusb/libusb</param>
+<param name="exclude">externals/cubeb</param>
+<param name="exclude">externals/lodepng/lodepng</param>
+<param name="exclude">externals/zstd</param>
+<param name="exclude">externals/libyuv</param>
+<param name="exclude">externals/sdl2/SDL</param>
+<param name="exclude">externals/cryptopp-cmake</param>
+<param name="exclude">externals/cryptopp</param>
+<param name="exclude">externals/openal-soft</param>
+<param name="exclude">externals/glslang</param>
+<param name="exclude">externals/vma</param>
+<param name="exclude">externals/vulkan-headers</param>
+<param name="exclude">externals/oaknut</param>
+    <param name="changesgenerate">enable</param>
+  </service>
+  <service name="tar" mode="buildtime"/>
+  <service name="recompress" mode="buildtime">
+    <param name="file">*.tar</param>
+    <param name="compression">gz</param>
+  </service>
+  <service name="set_version"/>
+</services>
