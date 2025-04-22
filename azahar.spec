@@ -33,7 +33,7 @@ BuildRequires: pkgconfig(fmt)
 BuildRequires: cmake(VulkanMemoryAllocator)
 BuildRequires: qt6-qtbase-devel
 BuildRequires: qt6-qtmultimedia-devel
-
+ExclusiveArch: %{arm64} aarch64 %{x86_64} x86_64
 Source: %{name}-%{version}.tar.gz
 
 %description
