@@ -35,8 +35,6 @@ BuildRequires: cmake(VulkanMemoryAllocator)
 BuildRequires: qt6-qtbase-devel
 BuildRequires: qt6-qtmultimedia-devel
 BuildRequires: cmake(tsl-robin-map)
-BuildRequires: cmake(mcl)
-BuildRequires: cmake(oaknut)
 
 Source: %{name}-%{version}.tar.gz
 
