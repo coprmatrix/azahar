@@ -16,7 +16,6 @@ BuildRequires: boost-devel
 BuildRequires: pkgconfig(libusb)
 BuildRequires: pkgconfig(soundtouch)
 BuildRequires: pkgconfig(libcryptopp)
-BuildRequires: pkgconfig(fmt)
 BuildRequires: cmake(dynarmic)
 BuildRequires: pkgconfig(inih)
 BuildRequires: cmake(zstd)
@@ -31,10 +30,10 @@ BuildRequires: cmake(cpp-jwt)
 BuildRequires: pkgconfig(lodepng)
 BuildRequires: cmake(OpenAL)
 BuildRequires: cmake(glslang)
+BuildRequires: pkgconfig(fmt)
 BuildRequires: cmake(VulkanMemoryAllocator)
 BuildRequires: qt6-qtbase-devel
 BuildRequires: qt6-qtmultimedia-devel
-BuildRequires: cmake(tsl-robin-map)
 
 Source: %{name}-%{version}.tar.gz
 
